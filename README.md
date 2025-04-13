@@ -34,6 +34,11 @@ A fully functional and visually appealing **Blog Platform** where users can writ
 
 ---
 
+## 🚀 Live Demo
+
+[![prakashBlog Preview](./screenshot.png)](https://blogsitepls.netlify.app)
+
+🔗 **Visit Website**: [https://blogsitepls.netlify.app](https://blogsitepls.netlify.app)
 ## 📁 Project Structure
 ```
 📦 blog-website
