@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+
+    <link rel="icon" href="./images/logo-dark.png" type="image/png">
+
+    <link rel="stylesheet" href="styles/style1.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body id="home-page" class="light-theme">
+    <header>
+        <div class="container">
+            <nav class="navbar">
+    
+                <a href="#">
+                    <img src="./images/logo-light.png" alt="pkBlog logo" width="150" height="40" class="logo-light">
+                    <img src="./images/logo-dark.png" alt="pkBlog logo" width="150" height="40" class="logo-dark">
+                </a>
+    
+                <div class="btn-group">
+        
+                    <button class="theme-btn theme-btn-mobile light">
+                        <ion-icon name="moon" class="moon"></ion-icon>
+                        <ion-icon name="sunny" class="sun"></ion-icon>
+                    </button>
+        
+                    <button class="nav-menu-btn">
+                        <ion-icon name="menu-outline"></ion-icon>
+                    </button>
+        
+                </div>
+    
+                <div class="flex-wrapper">
+        
+                    <ul class="desktop-nav">
+        
+                        <li class="nav-item"><a href="signIN_signUP.html" class="nav-link">Register</a></li>
+                        <li class="nav-item"><a href="create_post.html" class="nav-link">Create Post</a></li>
+                        <li class="nav-item"><a href="post.html" class="nav-link">Post</a></li>
+        
+                    </ul>
+        
+                    <button class="theme-btn theme-btn-desktop light">
+                        <ion-icon name="moon" class="moon"></ion-icon>
+                        <ion-icon name="sunny" class="sun"></ion-icon>
+                    </button>
+        
+                </div>
+            </nav>
+      </div>
+    </header>
+  
+    <!-- <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">MyBlog</a>
+            <ul class="nav-links">
+                <li><a href="register.html">Register</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="create_post.html">Create Post</a></li>
+                <li><a href="post.html">Post</a></li>
+            </ul>
+        </div>
+    </nav> -->
+    <main>
+
+        <!--
+          - #HERO SECTION
+        -->
+    
+        <div class="hero">
+    
+          <div class="container">
+    
+            <div class="left">
+    
+              <h1 class="h1">
+                Hi, I'm <b>Prakash&nbsp;Kumar</b>.
+                <br>Web Developer
+              </h1>
+    
+              <p class="h3">
+                Specialized in creating <abbr title="Accessibility">meaningful</abbr>
+                and <abbr title="Web Performance">accessible</abbr> web experiences.
+              </p>
+    
+              <div class="btn-group">
+                <a href="#" class="btn btn-primary">Contact Me</a>
+                <a href="#" class="btn btn-secondary">About Me</a>
+              </div>
+    
+            </div>
+    
+            <div class="right">
+    
+              <div class="pattern-bg"></div>
+              <div class="img-box">
+                <img src="./images/hero.jpg" alt="creater favorite photo" class="hero-img">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+              </div>
+    
+            </div>
+    
+          </div>
+    
+        </div>
+    
+    
+    
+    
+    
+        <div class="main">
+    
+          <div class="container">
+    
+            <!--
+              - BLOG SECTION
+            -->
+    
+            <!-- <div class="blog">
+    
+              <h2 class="h2">Latest Blog Post</h2>
+    
+              <div class="blog-card-group">
+    
+                <div class="blog-card">
+    
+                  <div class="blog-card-banner">
+                    <img src="./images/blog-1.png" alt="Accessibility Tips for Web Developers" width="250"
+                      class="blog-banner-img">
+                  </div>
+    
+                  <div class="blog-content-wrapper">
+    
+                    <button class="blog-topic text-tiny">Accessibility</button>
+    
+                    <h3><a href="" class="h3">Accessibility Tips for Web Developers</a></h3>
+    
+                    <p class="blog-text">
+                      It's awesome to build sites that are inclusive and accessible to everyone. There are at least six key
+                      areas of
+                      disability we can optimize for: visual, hearing, mobility, cognition, speech and neural. Many tools
+                      and resources can
+                      help here, even if you're totally new to web accessibility.
+                    </p>
+    
+                    <div class="wrapper-flex">
+    
+                      <div class="profile-wrapper">
+                        <img src="./images/author.png" alt="Julia walker" width="50">
+                      </div>
+    
+                      <div class="wrapper">
+                        <a href="#" class="h4">Julia Walker</a>
+    
+                        <p class="text-sm">
+                          <time datetime="2021-11-28">Nov 28, 2021</time>
+                          <span class="separator"></span>
+                          <ion-icon name="time-outline"></ion-icon>
+                          <time datetime="PT4M">4 min</time>
+                        </p>
+                      </div>
+    
+                    </div>
+    
+                  </div>
+    
+                </div>
+    
+              </div>
+              
+              <div id="posts-container" class="posts-grid"></div>
+              <button id="load-more-btn" class="btn load-more">Load More</button>
+    
+            </div>
+     -->
+     <div class="blog">
+      <h2 class="h2">Latest Blog Post</h2>
+    
+      <div id="posts-container" class="blog-card-group posts-grid"></div>
+    
+      <button id="load-more-btn" class="btn load-more">Load More</button>
+    </div>
+    
+    
+    
+    
+            <!--
+              - ASIDE
+            -->
+    
+            <div class="aside">
+    
+              <div class="topics">
+    
+                <h2 class="h2">Topics</h2>
+    
+                <a href="#" class="topic-btn">
+                  <div class="icon-box">
+                    <ion-icon name="server-outline"></ion-icon>
+                  </div>
+    
+                  <p>Database</p>
+                </a>
+    
+                <a href="#" class="topic-btn">
+                  <div class="icon-box">
+                    <ion-icon name="accessibility-outline"></ion-icon>
+                  </div>
+    
+                  <p>Accessibility</p>
+                </a>
+    
+                <a href="#" class="topic-btn">
+                  <div class="icon-box">
+                    <ion-icon name="rocket-outline"></ion-icon>
+                  </div>
+    
+                  <p>Web Performance</p>
+                </a>
+    
+              </div>
+    
+              <div class="tags">
+    
+                <h2 class="h2">Tags</h2>
+    
+                <div class="wrapper">
+    
+                  <button class="hashtag">#mongodb</button>
+                  <button class="hashtag">#nodejs</button>
+                  <button class="hashtag">#a11y</button>
+                  <button class="hashtag">#mobility</button>
+                  <button class="hashtag">#inclusion</button>
+                  <button class="hashtag">#webperf</button>
+                  <button class="hashtag">#optimize</button>
+                  <button class="hashtag">#performance</button>
+    
+                </div>
+    
+              </div>
+    
+              <div class="contact">
+    
+                <h2 class="h2">Let's Talk</h2>
+    
+                <div class="wrapper">
+    
+                  <p>
+                    Do you want to learn more about how I can help your company overcome problems? Let us have a
+                    conversation.
+                  </p>
+    
+                  <ul class="social-link">
+    
+                    <li>
+                      <a href="#" class="icon-box discord">
+                        <ion-icon name="logo-discord"></ion-icon>
+                      </a>
+                    </li>
+    
+                    <li>
+                      <a href="#" class="icon-box twitter">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                      </a>
+                    </li>
+    
+                    <li>
+                      <a href="#" class="icon-box facebook">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                      </a>
+                    </li>
+    
+                  </ul>
+    
+                </div>
+    
+              </div>
+    
+              <div class="newsletter">
+    
+                <h2 class="h2">Newsletter</h2>
+    
+                <div class="wrapper">
+    
+                  <p>
+                    Subscribe to our newsletter to be among the first to keep up with the latest updates.
+                  </p>
+    
+                  <form action="#">
+                    <input type="email" name="email" placeholder="Email Address" required>
+    
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                  </form>
+    
+                </div>
+    
+              </div>
+    
+            </div>
+    
+          </div>
+    
+        </div>
+    
+      </main>
+    
+    
+  
+  
+  
+  
+  
+    <!--
+      - #FOOTER
+    -->
+  
+    <footer>
+  
+        <div class="container">
+  
+            <div class="wrapper">
+    
+                <a href="#" class="footer-logo">
+                    <img src="./images/logo-light.png" alt="DevBlog's Logo" width="150" height="40" class="logo-light">
+                    <img src="./images/logo-dark.png" alt="DevBlog's Logo" width="150" height="40" class="logo-dark">
+                </a>
+        
+                <p class="footer-text">
+                    Learn about Web accessibility, Web performance, and Database management.
+                </p>
+    
+            </div>
+    
+            <div class="wrapper">
+    
+                <p class="footer-title">Quick Links</p>
+        
+                <ul>
+        
+                    <li>
+                        <a href="#" class="footer-link">Advertise with us</a>
+                    </li>
+        
+                    <li>
+                        <a href="#" class="footer-link">About Us</a>
+                    </li>
+        
+                    <li>
+                        <a href="#" class="footer-link">Contact Us</a>
+                    </li>
+        
+                </ul>
+    
+            </div>
+    
+            <div class="wrapper">
+    
+                <p class="footer-title">Legal Stuff</p>
+        
+                <ul>
+        
+                    <li>
+                        <a href="#" class="footer-link">Privacy Notice</a>
+                    </li>
+        
+                    <li>
+                        <a href="#" class="footer-link">Cookie Policy</a>
+                    </li>
+        
+                    <li>
+                        <a href="#" class="footer-link">Terms Of Use</a>
+                    </li>
+        
+                </ul>
+    
+            </div>
+    
+        </div>
+  
+        <p class="copyright">
+            &copy; Copyright 2022 <a href="#">teamPk</a>
+        </p>
+  
+    </footer>
+
+    <!-- ✅ Include theme & nav functionality -->
+    <script src="./scripts/script.js"></script>
+
+    <!-- ✅ Include your blog posts fetching and rendering -->
+    <script src="scripts/posts.js"></script>
+
+    <!--
+        - ionicon link
+    -->
+    <!-- Include this once -->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>    
+
+</body>
+</html>

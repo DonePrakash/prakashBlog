@@ -1,0 +1,128 @@
+/* Reset some defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9fafb;
+    color: #1e293b;
+    line-height: 1.6;
+    padding: 20px;
+  }
+  
+  /* Post container */
+  .post-container {
+    max-width: 850px;
+    margin: 30px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
+  }
+  
+  /* Post title */
+  #post-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 10px;
+  }
+  
+  /* Post category */
+  #post-category {
+    display: inline-block;
+    background-color: #4f46e5;
+    color: #fff;
+    padding: 6px 14px;
+    border-radius: 30px;
+    font-size: 0.85rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Post image */
+  #post-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 25px;
+  }
+  
+  /* Post content */
+  #post-content {
+    font-size: 1.15rem;
+    color: #334155;
+    margin-bottom: 30px;
+    white-space: pre-line;
+  }
+  
+  /* Tags */
+  #post-tags {
+    font-size: 0.95rem;
+    color: #64748b;
+    margin-bottom: 25px;
+  }
+  
+  /* Author section */
+  .author-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 30px;
+    border-top: 1px solid #e2e8f0;
+    padding-top: 20px;
+  }
+  
+  #author-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  #author-name {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #4f46e5;
+  }
+  
+  .back-button {
+    display: inline-block;
+    margin-top: 40px;
+    text-decoration: none;
+    color: #4f46e5;
+    font-weight: 600;
+    border: 2px solid #4f46e5;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .back-button:hover {
+    background-color: #4f46e5;
+    color: white;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .post-container {
+      padding: 20px;
+    }
+  
+    #post-title {
+      font-size: 2rem;
+    }
+  
+    #post-content {
+      font-size: 1.05rem;
+    }
+  
+    #author-avatar {
+      width: 50px;
+      height: 50px;
+    }
+  }
+  

@@ -1,0 +1,122 @@
+/* General body styles */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f0f4f8; /* Light background for readability */
+    color: #333; /* Dark text for contrast */
+}
+
+/* Navbar */
+header {
+    background-color: #333; /* Dark background */
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+nav a {
+    color: #4DB6AC; /* Teal for nav links */
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 30px;
+    border-radius: 50px;
+    border: 2px solid #4DB6AC; /* Teal border */
+    transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+    background-color: #4DB6AC;
+    color: #fff;
+}
+
+/* Main container */
+.container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+/* Page Title */
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+label {
+    font-size: 1rem;
+    color: #333;
+}
+
+input[type="text"],
+textarea,
+input[type="file"] {
+    padding: 12px;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease-in-out;
+}
+
+input[type="text"]:focus,
+textarea:focus,
+input[type="file"]:focus {
+    border-color: #4DB6AC; /* Teal border on focus */
+    background-color: #fff;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Button styling */
+button {
+    padding: 12px 30px;
+    background-color: #4DB6AC; /* Teal button */
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #FF6F61; /* Coral on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    form {
+        gap: 15px;
+    }
+}
