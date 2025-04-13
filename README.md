@@ -56,7 +56,7 @@ A fully functional and visually appealing **Blog Platform** where users can writ
 │   ├── 📜 view_post.html         # Full blog post view
 │   ├── 📜 create_post.html       # Blog post creation form
 │   ├── 📜 signIn_signUp.html     # Authentication (Sign-in/Sign-up page)
-│   ├── 📂 scripts/                    # JavaScript logic
-│   └── 📂 styles/                   # Styling and layout files
+│   ├── 📂 scripts/               # JavaScript logic
+│   └── 📂 styles/                # Styling and layout files
 │
 ├── 📜 README.md                  # Project documentation
