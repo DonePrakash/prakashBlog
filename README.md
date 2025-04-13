@@ -62,3 +62,53 @@ A fully functional and visually appealing **Blog Platform** where users can writ
 │
 ├── 📜 README.md                  # Project documentation
 ```
+## Installation
+
+### Prerequisites
+- **Node.js** (v14.x or higher)
+- **MongoDB** (or use MongoDB Atlas for a cloud database)
+
+### Step 1: Clone the Repository
+Clone the repository to your local machine using the following command:
+
+```bash
+git clone https://github.com/DonePrakash/prakashBlog.git
+```
+
+### Step 2: Backend Setup
+
+1. Navigate to the `backend` folder and install dependencies:
+
+    ```bash
+    cd backend
+    npm install
+    ```
+
+2. Set up MongoDB (either locally or on MongoDB Atlas).
+
+3. Create a `.env` file in the `backend` directory with the following keys:
+
+    - `MONGO_URI`: Your MongoDB connection string.
+    - `JWT_SECRET`: Your secret key for JWT.
+    - `CLOUDINARY_CLOUD_NAME`: Your Cloudinary Cloud Name.
+    - `CLOUDINARY_API_KEY`: Your Cloudinary API Key.
+    - `CLOUDINARY_API_SECRET`: Your Cloudinary API Secret.
+
+### Step 3: Frontend Setup
+
+1. Navigate to the `frontend` and `backend` folder and install dependencies:
+
+    ```bash
+    cd frontend
+    npm install
+    ```
+    ```bash
+    cd backend
+    ```
+    
+### Step 4: Access the Website
+
+Once both the frontend and backend are running, you can access the following:
+
+- **Frontend:** [https://blogsitepls.netlify.app/](https://blogsitepls.netlify.app/)
+- **Backend API:** [https://blog-backend-6p1z.onrender.com](https://blog-backend-6p1z.onrender.com)
