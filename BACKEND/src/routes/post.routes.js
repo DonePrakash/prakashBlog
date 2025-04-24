@@ -29,7 +29,7 @@ router.route("/allPosts").get(verifyJWT,getAllPosts);
 router.route("/myPosts").get(verifyJWT, getMyPosts);
 
 // Get a single post by ID
-router.route("/singlePost/:id").get(asyncHandler(getPostById));
+router.route("/singlePost/:id").get(getPostById);
 
 // Update a post by ID
 router.route("/updatePost/:id").patch(
